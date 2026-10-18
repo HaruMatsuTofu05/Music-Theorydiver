@@ -71,3 +71,26 @@ nav a:hover, nav a.active {
   margin-bottom: 3rem;
   max-width: 700px;
 }
+
+.buttons-grouped {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.light-button {
+  background-color: #fff;
+  color: #111;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.orange-button {
+  background-color: #f39c12;
+  color: #111;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
