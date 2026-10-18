@@ -5,6 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page - Music Theorydiver</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .contact-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        }
+
+        .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        }
+
+        .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+        }
+
+        .contact-logo {
+        width: 5%;
+        }
+
+        .contact-item a {
+        color: #fff;
+        text-decoration: none;
+        }
+
+        .contact-item a:hover {
+        text-decoration: underline;
+        }
+
+        form {
+        background: rgba(255, 255, 255, 0.03);
+        padding: 2.5rem;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .form-group {
+        margin-bottom: 1.5rem;
+        }
+
+        .form-desc {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        }
+
+        .form-group input, .form-group textarea {
+        width: 100%;
+        padding: 0.8rem 1rem;
+        background: rgba(255, 255, 255, 0.07);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 6px;
+        color: white;
+        font-size: 1rem;
+        }
+
+        .form-group textarea {
+        resize: vertical;
+        height: 120px;
+        }
+
+        .submit {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
   <header>
@@ -25,7 +101,7 @@
         <div class="contact-info">
             <div>
                 <h2 class="page-title">Contact Us</h2>
-                <p class="contact-desc">Have any concerns or suggestions? Ring us up and we’ll help you get back to making great tunes!</p>
+                <p class="section-desc">Have any concerns or suggestions? Ring us up and we’ll help you get back to making great tunes!</p>
             </div>
 
             <div class="contact-item">

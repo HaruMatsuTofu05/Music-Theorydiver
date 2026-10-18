@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chord Vault - Music Theorydiver</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chordvault.css">
 </head>
 <body>
   <header>
@@ -19,5 +20,139 @@
       </ul>
     </nav>
   </header>
+
+  <main class="container">
+    <h2 class="page-title">Chord Vault</h2>
+    <p class="section-desc">Interactive reference library featuring interval formulas, scale degree components, and audio playback!</p>
+
+    <div class="vault-grid">
+      <!-- Major -->
+      <div class="vault-card">
+        <div class="card-header">
+          <h3>Major Triad</h3>
+          <span class="degree-badge">1 - 3 - 5</span>
+        </div>
+        <div class="formula-block">
+          <p>
+            <strong>Formula:</strong> 
+            <span class="root">Root</span> + <span class="major-3rd">Major 3rd</span> + <span class="perfect-5th">Perfect 5th</span>
+          </p>
+          <p class="component-text">
+            <strong>Component:</strong> 
+            <span class="root">C</span> - D - <span class="major-3rd">E</span> - F - <span class="perfect-5th">G</span> - A - B
+          </p>
+        </div>
+        <div class="audio-wrapper">
+          <audio controls src="media/major-triad.mp3"></audio>
+        </div>
+      </div>
+
+      <!-- Minor -->
+      <div class="vault-card">
+        <div class="card-header">
+          <h3>Minor Triad</h3>
+          <span class="degree-badge">1 - ♭3 - 5</span>
+        </div>
+        <div class="formula-block">
+          <p>
+            <strong>Formula:</strong> 
+            <span class="root">Root</span> + <span class="minor-3rd">Minor 3rd</span> + <span class="perfect-5th">Perfect 5th</span>
+          </p>
+          <p class="component-text">
+            <strong>Component:</strong> 
+            <span class="root">C</span> - D - <span class="minor-3rd">E♭</span> - F - <span class="perfect-5th">G</span> - A - B
+          </p>
+        </div>
+        <div class="audio-wrapper">
+          <audio controls src="media/minor-triad.mp3"></audio>
+        </div>
+      </div>
+
+      <!-- Power Chord -->
+      <div class="vault-card">
+        <div class="card-header">
+          <h3>Power Chord (5)</h3>
+          <span class="degree-badge">1 - 5</span>
+        </div>
+        <div class="formula-block">
+          <p>
+            <strong>Formula:</strong> 
+            <span class="root">Root</span> + <span class="perfect-5th">Perfect 5th</span>
+          </p>
+          <p class="component-text">
+            <strong>Component:</strong> 
+            <span class="root">C</span> - D - E - F - <span class="perfect-5th">G</span> - A - B
+          </p>
+        </div>
+        <div class="audio-wrapper">
+          <audio controls src="media/power-chord.mp3"></audio>
+        </div>
+      </div>
+
+      <!-- Major 7th -->
+      <div class="vault-card">
+        <div class="card-header">
+          <h3>Major 7th</h3>
+          <span class="degree-badge">1 - 3 - 5 - 7</span>
+        </div>
+        <div class="formula-block">
+          <p>
+            <strong>Formula:</strong> 
+            <span class="root">Root</span> + <span class="major-3rd">3rd</span> + <span class="perfect-5th">Perfect 5th</span> + <span class="major-7th">7th</span>
+          </p>
+          <p class="component-text">
+            <strong>Component:</strong> 
+            <span class="root">C</span> - D - <span class="major-3rd">E</span> - F - <span class="perfect-5th">G</span> - A - <span class="major-7th">B</span>
+          </p>
+        </div>
+        <div class="audio-wrapper">
+          <audio controls src="media/major-7th.mp3"></audio>
+        </div>
+      </div>
+
+      <!-- Minor 7th -->
+      <div class="vault-card">
+        <div class="card-header">
+          <h3>Minor 7th</h3>
+          <span class="degree-badge">1 - ♭3 - 5 - ♭7</span>
+        </div>
+        <div class="formula-block">
+          <p>
+            <strong>Formula:</strong> 
+            <span class="root">Root</span> + <span class="minor-3rd">Flat 3rd</span> + <span class="perfect-5th">Perfect 5th</span> + <span class="flat-7th">Flat 7th</span>
+          </p>
+          <p class="component-text">
+            <strong>Component:</strong> 
+            <span class="root">C</span> - D - <span class="minor-3rd">E♭</span> - F - <span class="perfect-5th">G</span> - A - <span class="flat-7th">B♭</span>
+          </p>
+        </div>
+        <div class="audio-wrapper">
+          <audio controls src="media/minor-7th.mp3"></audio>
+        </div>
+      </div>
+
+      <!-- Dominant 7th -->
+      <div class="vault-card">
+        <div class="card-header">
+          <h3>Dominant 7th</h3>
+          <span class="degree-badge">1 - 3 - 5 - ♭7</span>
+        </div>
+        <div class="formula-block">
+          <p>
+            <strong>Formula:</strong> 
+            <span class="root">Root</span> + <span class="major-3rd">3rd</span> + <span class="perfect-5th">Perfect 5th</span> + <span class="flat-7th">Flat 7th</span>
+          </p>
+          <p class="component-text">
+            <strong>Component:</strong> 
+            <span class="root">C</span> - D - <span class="major-3rd">E</span> - F - <span class="perfect-5th">G</span> - A - <span class="flat-7th">B♭</span>
+          </p>
+        </div>
+        <div class="audio-wrapper">
+          <audio controls src="media/dominant-7th.mp3"></audio>
+        </div>
+      </div>
+
+    </div>
+  </main>
 </body>
 </html>
