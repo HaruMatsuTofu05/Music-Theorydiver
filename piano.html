@@ -1,10 +1,12 @@
+<!-- Note: Vibe-coded due to unforeseen complexity -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Piano - Music Theorydiver</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Piano - Music Theorydiver</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/piano.css">
 </head>
 <body>
   <header>
@@ -19,5 +21,50 @@
       </ul>
     </nav>
   </header>
+
+  <main class="container">
+    <h2 class="page-title">Interactive Piano</h2>
+    <p class="section-desc">Lower Octave: Z–M (White) / S–J (Black) | Higher Octave: Q–U (White) / 2–7 (Black).</p>
+
+    <div class="piano-console">
+      <div class="console-brand">
+        <h3>TheoryDriver</h3>
+        <span class="model-tag">MT-01</span>
+      </div>
+
+      <div class="piano" id="piano">
+        <div class="piano-key-white-wrap" data-note="C3" data-freq="130.81"><div class="piano-key white"></div><span class="key-label">C3<br>z</span></div>
+        <div class="piano-key-white-wrap" data-note="D3" data-freq="146.83"><div class="piano-key white"></div><span class="key-label">D3<br>x</span></div>
+        <div class="piano-key-white-wrap" data-note="E3" data-freq="164.81"><div class="piano-key white"></div><span class="key-label">E3<br>c</span></div>
+        <div class="piano-key-white-wrap" data-note="F3" data-freq="174.61"><div class="piano-key white"></div><span class="key-label">F3<br>v</span></div>
+        <div class="piano-key-white-wrap" data-note="G3" data-freq="196.00"><div class="piano-key white"></div><span class="key-label">G3<br>b</span></div>
+        <div class="piano-key-white-wrap" data-note="A3" data-freq="220.00"><div class="piano-key white"></div><span class="key-label">A3<br>n</span></div>
+        <div class="piano-key-white-wrap" data-note="B3" data-freq="246.94"><div class="piano-key white"></div><span class="key-label">B3<br>m</span></div>
+
+        <!-- HIGHER OCTAVE WHITE KEYS (C4 - B4) -->
+        <div class="piano-key-white-wrap" data-note="C4" data-freq="261.63"><div class="piano-key white"></div><span class="key-label">C4<br>q</span></div>
+        <div class="piano-key-white-wrap" data-note="D4" data-freq="293.66"><div class="piano-key white"></div><span class="key-label">D4<br>w</span></div>
+        <div class="piano-key-white-wrap" data-note="E4" data-freq="329.63"><div class="piano-key white"></div><span class="key-label">E4<br>e</span></div>
+        <div class="piano-key-white-wrap" data-note="F4" data-freq="349.23"><div class="piano-key white"></div><span class="key-label">F4<br>r</span></div>
+        <div class="piano-key-white-wrap" data-note="G4" data-freq="392.00"><div class="piano-key white"></div><span class="key-label">G4<br>t</span></div>
+        <div class="piano-key-white-wrap" data-note="A4" data-freq="440.00"><div class="piano-key white"></div><span class="key-label">A4<br>y</span></div>
+        <div class="piano-key-white-wrap" data-note="B4" data-freq="493.88"><div class="piano-key white"></div><span class="key-label">B4<br>u</span></div>
+
+        <div class="piano-key-black" data-note="C#3" data-freq="138.59" style="left: 45px;"><span class="key-label black-label">C#3<br>s</span></div>
+        <div class="piano-key-black" data-note="Eb3" data-freq="155.56" style="left: 109px;"><span class="key-label black-label">E♭3<br>d</span></div>
+        <div class="piano-key-black" data-note="F#3" data-freq="185.00" style="left: 237px;"><span class="key-label black-label">F#3<br>g</span></div>
+        <div class="piano-key-black" data-note="G#3" data-freq="207.65" style="left: 301px;"><span class="key-label black-label">G#3<br>h</span></div>
+        <div class="piano-key-black" data-note="Bb3" data-freq="233.08" style="left: 365px;"><span class="key-label black-label">B♭3<br>j</span></div>
+
+        <div class="piano-key-black" data-note="C#4" data-freq="277.18" style="left: 493px;"><span class="key-label black-label">C#4<br>2</span></div>
+        <div class="piano-key-black" data-note="Eb4" data-freq="311.13" style="left: 557px;"><span class="key-label black-label">E♭4<br>3</span></div>
+        <div class="piano-key-black" data-note="F#4" data-freq="369.99" style="left: 685px;"><span class="key-label black-label">F#4<br>5</span></div>
+        <div class="piano-key-black" data-note="G#4" data-freq="415.30" style="left: 749px;"><span class="key-label black-label">G#4<br>6</span></div>
+        <div class="piano-key-black" data-note="Bb4" data-freq="466.16" style="left: 813px;"><span class="key-label black-label">B♭4<br>7</span></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
